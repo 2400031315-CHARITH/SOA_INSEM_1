@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TouristController {
+
+    @GetMapping("/")
+    public String home() {
+        return "Tourist Service is running!";
+    }
+
+    @GetMapping("/ms1/tourists")
+    public String ms1() {
+        return "MS1 Tourist Service is running!";
+    }
+
+    @GetMapping("/ms2/tourists")
+    public String ms2() {
+        return "MS2 Tourist Service is running!";
+    }
+}
